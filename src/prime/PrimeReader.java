@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 public class PrimeReader {
 
-	static final String FILE_NAME = "lib/prime_upto_10m.dat";
+	static final String FILE_NAME = "lib/prime_upto_100m.dat";
 	// lib/prime_upto_1m.dat
 	// lib/prime_upto_10m.dat
 	// lib/prime_upto_100m.dat
