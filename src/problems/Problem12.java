@@ -29,15 +29,12 @@ public class Problem12 {
 					totalDivisor*=exp;
 				}
 			}
-			if(totalDivisor>=500) {
-				System.out.println(triNum+" ok");
-			}
-			if(i%1000==0) {
-				System.out.println(triNum+ ": " +totalDivisor);
-			}
 			if(totalDivisor>high) {
 				high=totalDivisor;
-				System.out.println(high);
+				System.out.println("New high: "+ triNum+ " with "+high+" divisors.");
+			}
+			if(totalDivisor>=500) {
+				System.out.println(triNum+" ok");
 			}
 		}
 	}
