@@ -2,11 +2,11 @@ package main;
 
 import java.io.IOException;
 
-import problems.Problem12;
+import problems.Problem13;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		Problem12.calc();
+		Problem13.calc();
 	}
 }
