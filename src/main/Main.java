@@ -1,12 +1,12 @@
 package main;
 
 import java.io.IOException;
-import problems.Problem14;
+import problems.Problem16;
 
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		Problem14.calc();
+		Problem16.calc();
 
 	}
 }
