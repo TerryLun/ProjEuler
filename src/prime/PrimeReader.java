@@ -5,11 +5,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 
 public class PrimeReader {
 
-	static final String FILE_NAME = "lib/prime_upto_100m.dat";
+	static final String FILE_NAME = "lib/prime_upto_1m.dat";
 	// lib/prime_upto_1m.dat
 	// lib/prime_upto_10m.dat
 	// lib/prime_upto_100m.dat
@@ -57,5 +58,25 @@ public class PrimeReader {
 			array[i] = iterator.next().intValue();
 		}
 		return array;
+	}
+	
+	public static HashSet<Integer> getPrimeSet() throws IOException {
+		HashSet<Integer> primeSet = new HashSet<>();
+		BufferedReader reader = null;
+		try {
+			File file = new File(FILE_NAME);
+			reader = new BufferedReader(new FileReader(file));
+
+			String line;
+			while ((line = reader.readLine()) != null) {
+				primeSet.add(Integer.parseInt(line));
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		reader.close();
+		return primeSet;
+	
 	}
 }
